@@ -1,0 +1,26 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+subprojects {
+    apply plugin: "java"
+
+    compileJava {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    repositories {
+        // Use Maven Central for resolving dependencies.
+        mavenCentral()
+    }
+
+    dependencies {
+        // Use JUnit Jupiter for testing.
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+    }
+
+    test {
+        // Use JUnit Platform for unit tests.
+        useJUnitPlatform()
+    }
+}
+

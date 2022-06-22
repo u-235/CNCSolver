@@ -1,0 +1,4 @@
+
+rootProject.name = 'CNCSolver'
+include('g17', 'app')
+
